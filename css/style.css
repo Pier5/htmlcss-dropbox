@@ -16,10 +16,6 @@ html {
 
 .head {
     width: 100%;
-    /* height: 50px;
-    position: fixed;
-    z-index: 1;
-    background-color: white; */
 }
 
 ul {
@@ -58,6 +54,11 @@ ul.right {
     border: none;
 }
 
+.btn-white {
+    padding: .6em 2em;
+    border: 1px solid black;
+}
+
 .btn-transparent {
     background-color: transparent;
     display: block;
@@ -90,8 +91,8 @@ h1 {
     font-size: 4.7rem;
 }
 
-h2 {
-    font-size: 2.4rem;
+.big-text {
+    font-size: 2.3rem;
 }
 
 .billing {
@@ -129,6 +130,10 @@ h2 {
     padding-bottom: 1rem;
 }
 
+.contact {
+    font-size: 1.5rem;
+}
+
 
 
 /* immagini */
@@ -153,6 +158,22 @@ h2 {
 
 .fas.fa-check {
     color: #0061ff;
+}
+
+.partner {
+    width: 100%;
+    background-size: cover;
+}
+
+.solutions {
+    font-size: .8rem;
+    padding: 1.5rem 0;
+}
+
+.find {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 
@@ -256,11 +277,6 @@ h2 {
     margin: 25px;
 }
 
-.solutions {
-    font-size: .8rem;
-    padding: 1.5rem 0;
-}
-
 .col-70 {
     width: 70%;
     float: left;
@@ -269,6 +285,24 @@ h2 {
 .col-30 {
     width: 30%;
     float: left;
+}
+
+.split {
+    margin: 100px 0;
+}
+
+.split-left {
+    width: 50%;
+    float: left;
+}
+
+.split-right {
+    width: 50%;
+    float: left;
+}
+
+.split-text {
+    margin: 45px;
 }
 
 
