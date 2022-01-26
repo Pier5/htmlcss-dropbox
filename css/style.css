@@ -354,7 +354,11 @@ h1 {
 .square-a,
 .square-b,
 .square-c,
-.square-d {
+.square-d,
+.square-e,
+.square-f,
+.square-g,
+.square-h {
     width: 50%;
     height: 200px;
     float: left;
@@ -364,7 +368,11 @@ h1 {
 .design,
 .arizona,
 .florida,
-.topps {
+.topps,
+.world,
+.hearst,
+.lonely,
+.clear {
     width: 50%;
     position: absolute;
     top: 50%;
@@ -384,8 +392,25 @@ h1 {
 .square-c {
     background-color: #0093ce;
 }
+
 .square-d {
     background-color: #ff1c1c;
+}
+
+.square-e {
+    background-color: #d5001f;
+}
+
+.square-f {
+    background-color: #b4dde7;
+}
+
+.square-g {
+    background-color: #0d2481;
+}
+
+.square-h {
+    background-color: #ffd830;
 }
 
 
