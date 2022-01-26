@@ -62,6 +62,13 @@ ul.right {
     border: 1px solid black;
 }
 
+.btn-white-bi {
+    padding: .6em 2em;
+    background-color: white;
+    border: none;
+    float: right;
+}
+
 .btn-transparent {
     background-color: transparent;
     display: block;
@@ -155,6 +162,14 @@ h1 {
 
 .underline {
     text-decoration: ;
+}
+
+.big-text-bis {
+    font-size: 2rem;
+    text-align: center;
+    color: #61082b;
+    text-align: left;
+    float: left;
 }
 
 
@@ -283,6 +298,12 @@ h1 {
 	width: 20%;
 }
 
+.hr-bis {
+    margin: 1.2rem  0;
+	border-top: 1px solid lightgray;
+	width: 10%;:
+}
+
 .business-bottom {
     width: calc(100% - 30px);
     border: 1px solid lightgray;
@@ -346,7 +367,7 @@ h1 {
 
 .square-left,
 .square-right {
-    width: calc((100% - 40%) / 2);
+    width: calc((100% - 40% - 90px) / 2);
     height: 400px;
     float: left;
 }
@@ -412,6 +433,59 @@ h1 {
 .square-h {
     background-color: #ffd830;
 }
+
+.square-middle {
+    margin: 45px;
+}
+
+.design-black {
+    width: 25%;
+}
+
+.square-mid {
+    height: 400px;
+}
+
+.square-bottom {
+    width: 100%;
+    min-height: 0;
+    background-color: #b4dde7;
+}
+
+.square-bot {
+    margin-top: 0;
+    height: 200px;
+}
+
+.square-bot-left {
+    width: 40%;
+}
+
+.questions {
+    margin-top: 6rem;
+}
+
+.question {
+    margin-top: 4rem;
+}
+
+.q-a {
+    flaot: left;
+    font-weight: bold;
+    line-height: 5rem;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.chevron {
+    float: right;
+}
+
+
+
+
+
+
 
 
 
