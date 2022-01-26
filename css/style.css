@@ -47,6 +47,9 @@ ul.right {
     width: 90px;
 }
 
+
+/* pulsanti */
+
 .btn-blue {
     background-color: #0061ff;
     padding: .6em 2em;
@@ -74,7 +77,7 @@ ul.right {
 }
 
 .container-1000 {
-    margin: 250px auto;
+    margin: 250px auto 0;
     max-width: 1000px;
 }
 
@@ -92,7 +95,7 @@ h1 {
 }
 
 .big-text {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
 }
 
 .billing {
@@ -130,8 +133,28 @@ h1 {
     padding-bottom: 1rem;
 }
 
+.solutions {
+    font-size: .8rem;
+    padding: 1.5rem 0;
+}
+
+.find,
+.contact-text {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
 .contact {
     font-size: 1.5rem;
+}
+
+.contact-text {
+    line-height: 1.2rem;
+}
+
+.underline {
+    text-decoration: ;
 }
 
 
@@ -164,19 +187,6 @@ h1 {
     width: 100%;
     background-size: cover;
 }
-
-.solutions {
-    font-size: .8rem;
-    padding: 1.5rem 0;
-}
-
-.find {
-    padding: 1.5rem 0;
-    font-size: 1rem;
-    line-height: 1.4rem;
-}
-
-
 
 
 
@@ -212,7 +222,7 @@ h1 {
     margin-top: 40px;
 }
 
-.col-left {
+.col-left.pad {
     padding-bottom: 4.3rem;
 }
 
@@ -225,6 +235,12 @@ h1 {
     width: calc((100% - 30px - 40px) /3);
     border: 1px solid lightgray;
     float: left;
+}
+
+.raw-bis {
+    width: calc((100% - 30px - 40px) /3);
+    float: left;
+    padding-bottom: 5rem;
 }
 
 .main-top,
@@ -304,5 +320,73 @@ h1 {
 .split-text {
     margin: 45px;
 }
+
+.items-bottom {
+    margin-top: 50px;
+}
+
+.square-top {
+    width: 50%;
+}
+
+.buy.clients {
+    line-height: 4rem;
+    font-size: .9rem;
+}
+
+.square {
+    min-height: 0;
+}
+
+.square-middle {
+    width: 40%;
+    height: 400px;
+    float: left;
+}
+
+.square-left,
+.square-right {
+    width: calc((100% - 40%) / 2);
+    height: 400px;
+    float: left;
+}
+
+.square-a,
+.square-b,
+.square-c,
+.square-d {
+    width: 50%;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.design,
+.arizona,
+.florida,
+.topps {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square-a {
+    background-color: #a2d39b;
+    border: 8px solid #d0e9cd;
+}
+
+.square-b {
+    background-color: #61082b;
+}
+
+.square-c {
+    background-color: #0093ce;
+}
+.square-d {
+    background-color: #ff1c1c;
+}
+
 
 
