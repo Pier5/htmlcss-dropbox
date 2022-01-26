@@ -187,7 +187,7 @@ h1 {
 }
 
 .jumbo {
-    width: 48rem;
+    max-width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -213,7 +213,7 @@ h1 {
 }
 
 .col-left-top {
-    width: 28%;
+    max-width: 28%;
     margin-top: 2rem;
 }
 
@@ -356,7 +356,7 @@ h1 {
 }
 
 .square {
-    min-height: 0;
+    margin-top: 40px;
 }
 
 .square-middle {
@@ -448,13 +448,12 @@ h1 {
 
 .square-bottom {
     width: 100%;
-    min-height: 0;
     background-color: #b4dde7;
 }
 
 .square-bot {
     margin-top: 0;
-    height: 200px;
+    height: 250px;
 }
 
 .square-bot-left {
@@ -466,7 +465,7 @@ h1 {
 }
 
 .question {
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .q-a {
@@ -480,6 +479,44 @@ h1 {
 .chevron {
     float: right;
 }
+
+.footer-page {
+    background-color: black; 
+    min-height: 500px;
+}
+
+.column {
+    color: white;
+    padding-bottom: 2.5rem;
+    float: left;
+}
+
+.foot-list {
+    display: block;
+    margin-left: 0;
+    padding-right: 3.5rem;
+}
+
+.foot-link {
+    color: white;
+    font-weight: lighter;
+}
+
+.foot-text {
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+}
+
+.foot-nav {
+    width: 100%;
+}
+
+.lang {
+    margin-top: 4rem;
+    color: gray;
+}
+
+
 
 
 
