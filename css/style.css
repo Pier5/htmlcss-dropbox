@@ -180,6 +180,30 @@ h1 {
     font-size: .9rem;
 }
 
+.choice.move {
+    position: relative;
+    padding-left: 1.3rem;
+}
+
+.choice.move:before {
+    position: absolute;
+    left: 0;
+}
+
+.choices {
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.buy {
+    color: #3d86ff;
+    text-decoration: underline;
+}
+
+.choices.b {
+    padding-top: 2.5rem;
+}
+
 .description {
     font-size: .9rem;
     padding-bottom: 1rem;
@@ -317,20 +341,6 @@ h1 {
 
 .main-text-bottom {
     padding-top: 20px;
-}
-
-.choices {
-    margin: 0 auto;
-    padding: 1rem 0;
-}
-
-.buy {
-    color: #3d86ff;
-    text-decoration: underline;
-}
-
-.choices.b {
-    padding-top: 2.5rem;
 }
 
 .b {
@@ -608,14 +618,3 @@ h1 {
 .foot-container {
     min-height: 520px;
 }
-
-
-
-
-
-
-
-
-
-
-
