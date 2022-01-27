@@ -116,7 +116,6 @@ ul.right {
 
 .btn-transparent {
     background-color: transparent;
-    display: block;
 }
 
 /* container */
@@ -223,6 +222,11 @@ h1 {
 .fas.fa-arrow-down {
     padding-top: 1.5rem;
     font-size: 2.5rem;
+}
+
+.fas.fa-sort-up {
+    padding-left: .2rem;
+    vertical-align: bottom;
 }
 
 .far,
@@ -519,8 +523,6 @@ h1 {
     font-weight: bold;
     line-height: 5rem;
     border-top: 1px solid lightgray;
-    /* border-bottom: 1px solid lightgray; */
-    /* display: block; */
 }
 
 .q-shadow {
@@ -600,13 +602,7 @@ h1 {
 }
 
 .lang {
-    /* padding-top: 5rem; */
     color: gray;
-}
-
-.fas.fa-sort-up {
-    padding-left: .2rem;
-    vertical-align: bottom;
 }
 
 .foot-container {
