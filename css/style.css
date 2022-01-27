@@ -16,7 +16,7 @@ html {
 
 .head {
     width: 100%;
-    line-height: calc(3rem - 4px);
+    line-height: 3rem;
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -84,8 +84,7 @@ ul.right {
     vertical-align: text-bottom;
 }
 
-
-/* pulsanti */
+/* buttons */
 
 .btn-blue {
     background-color: #0061ff;
@@ -103,7 +102,8 @@ ul.right {
     border: 1px solid black;
 }
 
-.btn-white:hover {
+.btn-white:hover,
+.btn-white-bi:hover {
     background-color: #efefef;
 }
 
@@ -186,6 +186,10 @@ h1 {
     padding-bottom: 1rem;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .solutions {
     font-size: .8rem;
     padding: 1.5rem 0;
@@ -214,11 +218,10 @@ h1 {
     float: left;
 }
 
-
-
-/* immagini */
+/* images */
 
 .fas.fa-arrow-down {
+    padding-top: 1.5rem;
     font-size: 2.5rem;
 }
 
@@ -233,7 +236,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-25%, -7%);   
+    transform: translate(-22%, -7%);   
 }
 
 .fas.fa-check {
@@ -244,9 +247,6 @@ h1 {
     width: 100%;
     background-size: cover;
 }
-
-
-
 
 .block {
     display: block;
@@ -259,14 +259,13 @@ h1 {
     margin-top: 2rem;
 }
 
-
 .circle {
     margin-top: 50px;
     margin-right: 3px;
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
     border-radius: 50%;
     vertical-align: text-bottom;
 }
@@ -340,10 +339,15 @@ h1 {
 	width: 20%;
 }
 
-.hr-bis {
-    margin: 1.2rem  0;
+.hr-bis,
+.hr-foot {
+    margin: 2rem  0;
 	border-top: 1px solid lightgray;
 	width: 10%;
+}
+
+.hr-foot {
+    padding-bottom: 2.5rem;
 }
 
 .business-bottom {
@@ -510,11 +514,49 @@ h1 {
     margin: 4rem 0;
 }
 
-.q-a {
+.q-a,
+.q-a-bi {
     font-weight: bold;
     line-height: 5rem;
     border-top: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
+    /* display: block; */
+}
+
+.q-shadow {
+    padding-bottom: 2rem;
+}
+
+.answer {
+    width: 80%;
+    font-size: .9rem;
+    color: gray;
+    line-height: 1.3rem;
+    padding: 1rem 0;
+}
+
+.q-block.bottom {
     border-bottom: 1px solid lightgray;
+}
+
+.q-block {
+    position: relative;
+}
+
+.q-a {
+    display: block;
+}
+
+.q-shadow {
+    display: none;
+}
+
+.q-block:hover .q-a {
+    display: none;
+}
+
+.q-block:hover .q-shadow {
+    display: block;
 }
 
 .chevron {
@@ -558,13 +600,13 @@ h1 {
 }
 
 .lang {
-    margin-top: 4rem;
+    /* padding-top: 5rem; */
     color: gray;
 }
 
-.sort-up {
-    padding-left: .5rem;
-    vertical-align: middle;
+.fas.fa-sort-up {
+    padding-left: .2rem;
+    vertical-align: bottom;
 }
 
 .foot-container {
