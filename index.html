@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></head>
 <body>
-    <header class="clearfix">
-        <nav class="head">
+    <header>
+        <nav class="head clearfix">
             <ul class="ul left">
                 <li><a href="#"><img class="dropbox" src="img/logo-small.png" alt="Logo Dropbox"></a></li>
-                <li><a href="#">Perchè Dropbox</a></li>
-                <li><a href="#">Funzioni</a></li>
-                <li><a href="#">Piani e prezzi</a></li>
+                <li class="head-li"><a href="#">Perchè Dropbox</a></li>
+                <li class="head-li"><a href="#">Funzioni</a></li>
+                <li class="head-li"><a href="#">Piani e prezzi</a></li>
             </ul>
             <ul class="ul right">
-                <li><a href="#">Supporto</a></li>
-                <li><a href="#">Contatta l'ufficio vendite</a></li>
-                <li><a href="#">Accedi</a></li>
+
+                <li class="head-li">
+                    <a href="#">Supporto</a>
+                    <ul class="menù">
+                        <li class="sub-menù"><a class="sub-a" href="#">Centro assistenza</a></li>
+                        <li class="sub-menù"><a class="sub-a" href="#">Forum della community</a></li>
+
+                    </ul>
+                </li>
+                <li class="head-li"><a href="#">Contatta l'ufficio vendite</a></li>
+                <li class="head-li"><a href="#">Accedi</a></li>
                 <li><a class="btn-blue" href="#">Inizia</a></li>
             </ul>
         </nav>
@@ -254,9 +262,9 @@
                     <div class="square-bot-right"><button class="btn-white-bi">Inizia ora la tua prova gratuita</button></div>
                 </div>
             </section>
-            <section class="container-1000 questions clearfix">
+            <section class="container-1000 questions">
                 <h3 class="contact">Domande frequenti</h3>
-                <div class="question">
+                <div class="question clearfix">
                     <div class="q-a">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span class="chevron"><i class="fas fa-chevron-down"></i></span></div>
                     <div class="q-a">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span class="chevron"><i class="fas fa-chevron-down"></i></span></div>
                     <div class="q-a">Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?<span class="chevron"><i class="fas fa-chevron-down"></i></span></div>
@@ -265,10 +273,10 @@
             </section>   
     </main>
     <footer class="footer-page">
-            <div class="container-1300">
+            <div class="foot-container container-1300">
                 <div class="footer-top clearfix">
                     <nav class="foot-nav">
-                        <ul class="foot-ul clearfix">
+                        <ul class="foot-ul">
                             <li class="column">
                                 <h3 class="foot-text">Dropbox</h3>
                                 <ul>

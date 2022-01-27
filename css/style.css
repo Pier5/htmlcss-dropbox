@@ -16,6 +16,15 @@ html {
 
 .head {
     width: 100%;
+    line-height: calc(3rem - 4px);
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    min-width: 1080px;
+}
+
+.head-li:hover {
+    border-bottom: 1px solid black;
 }
 
 ul {
@@ -24,7 +33,7 @@ ul {
 
 li {
     display: inline-block;
-    margin: 1rem 1rem;
+    margin: 0 1rem;
     vertical-align: middle;
 }
 
@@ -41,10 +50,38 @@ ul.left {
 
 ul.right {
     float: right;
+    position: relative;
+}
+
+.menù {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+.sub-menù {
+    display: block;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.sub-a {
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.head-li:hover .menù {
+    display: block;
+}
+
+.sub-menù:hover {
+    background-color: lightgray;
 }
 
 .dropbox {
     width: 90px;
+    vertical-align: text-bottom;
 }
 
 
@@ -57,9 +94,17 @@ ul.right {
     border: none;
 }
 
+.btn-blue:hover {
+    opacity: 0.8;
+}
+
 .btn-white {
     padding: .6em 2em;
     border: 1px solid black;
+}
+
+.btn-white:hover {
+    background-color: #efefef;
 }
 
 .btn-white-bi {
@@ -79,7 +124,7 @@ ul.right {
 .container-1300 {
     margin: 0 auto;
     max-width: 1300px;
-    min-height: 600px;
+    min-height: 620px;
     padding-top: 4rem;
 }
 
@@ -93,6 +138,7 @@ ul.right {
     width: 100%;
     background-color: #9acfe9;
     position: relative;
+    padding-top: 2rem;
 }
 
 /* text */
@@ -160,10 +206,6 @@ h1 {
     line-height: 1.2rem;
 }
 
-.underline {
-    text-decoration: ;
-}
-
 .big-text-bis {
     font-size: 2rem;
     text-align: center;
@@ -191,7 +233,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-25%, -8%);   
+    transform: translate(-25%, -7%);   
 }
 
 .fas.fa-check {
@@ -301,7 +343,7 @@ h1 {
 .hr-bis {
     margin: 1.2rem  0;
 	border-top: 1px solid lightgray;
-	width: 10%;:
+	width: 10%;
 }
 
 .business-bottom {
@@ -363,12 +405,12 @@ h1 {
     width: 40%;
     height: 400px;
     float: left;
+    overflow: auto;
 }
 
 .square-left,
 .square-right {
     width: calc((100% - 40% - 90px) / 2);
-    height: 400px;
     float: left;
 }
 
@@ -469,7 +511,6 @@ h1 {
 }
 
 .q-a {
-    flaot: left;
     font-weight: bold;
     line-height: 5rem;
     border-top: 1px solid lightgray;
@@ -482,19 +523,24 @@ h1 {
 
 .footer-page {
     background-color: black; 
-    min-height: 500px;
 }
 
 .column {
+    margin-left: 0;
     color: white;
-    padding-bottom: 2.5rem;
+    padding-bottom: 4.5rem;
     float: left;
 }
 
 .foot-list {
     display: block;
+    margin-top: 1rem;
     margin-left: 0;
     padding-right: 3.5rem;
+}
+
+.foot-link:hover {
+    border-bottom: 1px solid white;
 }
 
 .foot-link {
@@ -514,6 +560,15 @@ h1 {
 .lang {
     margin-top: 4rem;
     color: gray;
+}
+
+.sort-up {
+    padding-left: .5rem;
+    vertical-align: middle;
+}
+
+.foot-container {
+    min-height: 520px;
 }
 
 
