@@ -16,7 +16,8 @@ html {
 
 .head {
     width: 100%;
-    line-height: 3rem;
+    height: 3rem;
+    line-height: calc(3rem - 2px);
     position: fixed;
     z-index: 1;
     background-color: white;
@@ -24,7 +25,7 @@ html {
 }
 
 .head-li:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 ul {
@@ -34,7 +35,6 @@ ul {
 li {
     display: inline-block;
     margin: 0 1rem;
-    vertical-align: middle;
 }
 
 a {
@@ -50,14 +50,13 @@ ul.left {
 
 ul.right {
     float: right;
-    position: relative;
 }
 
 .menù {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
 }
 
 .sub-menù {
@@ -77,11 +76,6 @@ ul.right {
 
 .sub-menù:hover {
     background-color: lightgray;
-}
-
-.dropbox {
-    width: 90px;
-    vertical-align: text-bottom;
 }
 
 /* buttons */
@@ -118,7 +112,27 @@ ul.right {
     background-color: transparent;
 }
 
-/* container */
+.circle {
+    margin-top: 50px;
+    margin-right: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    vertical-align: text-bottom;
+}
+
+.circle.double {
+    border: 4px solid #0061ff;
+}
+
+.bkg-lightblue {
+    width: 100%;
+    background-color: #9acfe9;
+    position: relative;
+    padding-top: 2rem;
+}
 
 .container-1300 {
     margin: 0 auto;
@@ -132,14 +146,6 @@ ul.right {
     max-width: 1000px;
 }
 
-
-.bkg-lightblue {
-    width: 100%;
-    background-color: #9acfe9;
-    position: relative;
-    padding-top: 2rem;
-}
-
 /* text */
 
 h1 {
@@ -148,6 +154,10 @@ h1 {
 
 .big-text {
     font-size: 2.2rem;
+}
+
+.big-text-s {
+    font-size: 2.3rem;
 }
 
 .billing {
@@ -220,7 +230,7 @@ h1 {
 
 .find,
 .contact-text {
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
     font-size: 1rem;
     line-height: 1.4rem;
 }
@@ -241,7 +251,29 @@ h1 {
     float: left;
 }
 
+.buy.clients {
+    line-height: 4rem;
+    font-size: .9rem;
+}
+
+.q-a,
+.q-a-bi {
+    font-weight: bold;
+    line-height: 5rem;
+    border-top: 1px solid lightgray;
+}
+
+.foot-text {
+    font-size: 1.3rem;
+    padding-bottom: 1.2rem;
+}
+
 /* images */
+
+.dropbox {
+    width: 90px;
+    vertical-align: text-bottom;
+}
 
 .fas.fa-arrow-down {
     padding-top: 1.5rem;
@@ -256,7 +288,7 @@ h1 {
 .far,
 .fas {
     font-size: .9rem;
-    padding-right: .4rem;
+    padding-right: .2rem;
 }
 
 .jumbo {
@@ -276,6 +308,27 @@ h1 {
     background-size: cover;
 }
 
+.design,
+.arizona,
+.florida,
+.topps,
+.world,
+.hearst,
+.lonely,
+.clear {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.design-black {
+    width: 25%;
+}
+
+/* images end */
+
 .block {
     display: block;
     margin-top: 1.5rem;
@@ -287,21 +340,6 @@ h1 {
     margin-top: 2rem;
 }
 
-.circle {
-    margin-top: 50px;
-    margin-right: 3px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid lightgray;
-    border-radius: 50%;
-    vertical-align: text-bottom;
-}
-
-.circle:hover {
-    border: 4px solid blue;
-}
-
 .business-main {
     margin-top: 40px;
 }
@@ -310,19 +348,21 @@ h1 {
     padding-bottom: 4.3rem;
 }
 
-.col-left,
-.col-middle {
-    margin-right: 20px;
+.raw-bis.col-left,
+.raw-bis.col-middle,
+.raw.col-left,
+.raw.col-middle {
+    margin-right: 40px;
 }
 
 .raw {
-    width: calc((100% - 30px - 40px) /3);
+    width: calc((100% - 80px) /3);
     border: 1px solid lightgray;
     float: left;
 }
 
 .raw-bis {
-    width: calc((100% - 30px - 40px) /3);
+    width: calc((100% - 80px) /3);
     float: left;
     padding-bottom: 5rem;
 }
@@ -407,12 +447,7 @@ h1 {
 }
 
 .square-top {
-    width: 50%;
-}
-
-.buy.clients {
-    line-height: 4rem;
-    font-size: .9rem;
+    width: 51%;
 }
 
 .square {
@@ -444,21 +479,6 @@ h1 {
     height: 200px;
     float: left;
     position: relative;
-}
-
-.design,
-.arizona,
-.florida,
-.topps,
-.world,
-.hearst,
-.lonely,
-.clear {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .square-a {
@@ -495,15 +515,8 @@ h1 {
 }
 
 .square-middle {
-    margin: 45px;
-}
-
-.design-black {
-    width: 25%;
-}
-
-.square-mid {
-    height: 400px;
+    margin: 0 45px;
+    padding: 0 2.5rem;
 }
 
 .square-bottom {
@@ -513,7 +526,7 @@ h1 {
 
 .square-bot {
     margin-top: 0;
-    height: 250px;
+    padding: 6rem 0;
 }
 
 .square-bot-left {
@@ -526,13 +539,6 @@ h1 {
 
 .question {
     margin: 4rem 0;
-}
-
-.q-a,
-.q-a-bi {
-    font-weight: bold;
-    line-height: 5rem;
-    border-top: 1px solid lightgray;
 }
 
 .q-shadow {
@@ -579,6 +585,10 @@ h1 {
     background-color: black; 
 }
 
+.foot-container {
+    min-height: 520px;
+}
+
 .column {
     margin-left: 0;
     color: white;
@@ -593,28 +603,15 @@ h1 {
     padding-right: 3.5rem;
 }
 
-.foot-link:hover {
-    border-bottom: 1px solid white;
-}
-
 .foot-link {
     color: white;
     font-weight: lighter;
 }
 
-.foot-text {
-    font-size: 1.3rem;
-    padding-bottom: 1.2rem;
-}
-
-.foot-nav {
-    width: 100%;
+.foot-link:hover {
+    border-bottom: 1px solid white;
 }
 
 .lang {
     color: gray;
-}
-
-.foot-container {
-    min-height: 520px;
 }
