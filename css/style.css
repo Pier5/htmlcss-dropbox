@@ -96,6 +96,10 @@ ul.right {
     border: 1px solid black;
 }
 
+.btn-white.gray {
+    background-color: white;
+}
+
 .btn-white:hover,
 .btn-white-bi:hover {
     background-color: #efefef;
