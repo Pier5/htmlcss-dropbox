@@ -56,7 +56,7 @@ ul.right {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .sub-menù {
@@ -228,8 +228,7 @@ h1 {
     padding: 1.5rem 0;
 }
 
-.find,
-.contact-text {
+.find {
     padding: 2.5rem 0;
     font-size: 1rem;
     line-height: 1.4rem;
@@ -240,7 +239,10 @@ h1 {
 }
 
 .contact-text {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
     line-height: 1.2rem;
+    font-size: 1rem;
 }
 
 .big-text-bis {
@@ -296,7 +298,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-22%, -7%);   
+    transform: translate(-22%, -7%);
 }
 
 .fas.fa-check {
@@ -324,6 +326,7 @@ h1 {
 }
 
 .design-black {
+    padding-top: 2rem;
     width: 25%;
 }
 
@@ -457,13 +460,15 @@ h1 {
 .square-middle {
     width: 40%;
     height: 400px;
+    padding: 0 2.5rem;
     float: left;
     overflow: auto;
+    background-color: #f5f5f5;
 }
 
 .square-left,
 .square-right {
-    width: calc((100% - 40% - 90px) / 2);
+    width: calc((100% - 40%) / 2);
     float: left;
 }
 
@@ -512,11 +517,6 @@ h1 {
 
 .square-h {
     background-color: #ffd830;
-}
-
-.square-middle {
-    margin: 0 45px;
-    padding: 0 2.5rem;
 }
 
 .square-bottom {
@@ -582,7 +582,7 @@ h1 {
 }
 
 .footer-page {
-    background-color: black; 
+    background-color: black;
 }
 
 .foot-container {
